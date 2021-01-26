@@ -36,7 +36,7 @@ const setScore = function (score) {
 
 // On check btn click get the guess value
 checkBtn.addEventListener("click", function () {
-  const guess = Number(userGuess.value);
+  const guess = Number(document.querySelector(".guess").value);
   // If no number entered
   if (!guess) {
     displayMessage("❌ No Number!");
